@@ -13,7 +13,7 @@ public class Compensation {
 		this.employee = employee;
 		this.salary = salary;
 		this.effectiveDate = effectiveDate;
-    }
+    	}
 	
 	public Employee getEmployee() {
 		return employee;
