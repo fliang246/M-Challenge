@@ -53,7 +53,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	
 	//Retrieves number of reports by employeeId string
 	@Override
-	public ReportingStructure getNumberOfReports(String id) {
+	public int getNumberOfReports(String id) {
 		LOG.debug("Computing number of reports for id [{}]", id);
 
 		Employee emp = employeeRepository.findByEmployeeId(id);
