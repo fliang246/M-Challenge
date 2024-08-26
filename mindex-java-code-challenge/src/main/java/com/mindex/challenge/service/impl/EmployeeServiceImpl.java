@@ -57,9 +57,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		LOG.debug("Computing number of reports for id [{}]", id);
 
 		Employee emp = employeeRepository.findByEmployeeId(id);
-		this.countReports(emp);
 		
-		return ReportingStructure;
+		return this.countReports(emp);
 	}
 	
 	//Creates Compensation object before inserting into database
