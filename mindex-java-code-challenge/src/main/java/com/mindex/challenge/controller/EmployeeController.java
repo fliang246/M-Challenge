@@ -45,14 +45,14 @@ public class EmployeeController {
 		return employeeService.getNumberOfReports(id);
 	}
 	
-	@PostMapping("/employee/compensation")
+	@PostMapping("/employee/createCompensation")
 	public Compensation createCompensation(@RequestBody Employee employee) {
 		LOG.debug("Received compensation create request for [{}]", employee);
 		
 		return employeeService.createCompensation(employee);
 	} 
 	
-	@GetMapping("/employee/compensation/{id}")
+	@GetMapping("/employee/readCompensation/{id}")
 	public Compensation readCompensation(@PathVariable String id) {
 		LOG.debug("Received compensation read request for id [{}]", id);
 		
