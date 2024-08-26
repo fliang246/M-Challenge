@@ -39,7 +39,7 @@ public class EmployeeController {
     }
 	
 	@GetMapping("/employee/getReports/{id}")
-	public ReportingStructure getNumberofReports(@PathVariable String id) {
+	public int getNumberofReports(@PathVariable String id) {
 		LOG.debug("Received getNumberOfReports request for id [{}]", id);
 		
 		return employeeService.getNumberOfReports(id);
